@@ -54,6 +54,10 @@ max-width: 560px;
   color: white;
   display: block;
 }
+.btn:hover{
+  background-color: #161616;
+  border: 3px blueviolet solid;
+}
 .header-img img{
 
 }
@@ -85,14 +89,34 @@ padding: 20px;
   background-color: #DD0000;
   color: white;
 }
+.btnb:nth-child(3):hover{
+background-color: bisque;
+color: #161616;
+border: 3px blue solid;
+}
+.btnb:hover{
+  background-color: aqua;
+  color: #DD0000;
+  border: 3px solid burlywood;
+}
+.parents{
+  flex: 1;
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ gap: 10px;
+}
 .match-card{
   border-radius: 10px;
   border: 2px black solid;
- flex: 1;
+
+}
+.card-body{
+  padding: 20px;
 }
 .match-card img{
 max-height: 170px;
 width: 100%;
+border-radius: 10px 10px 0 0;
  
 }
 .bottom-button{
