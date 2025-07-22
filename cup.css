@@ -14,10 +14,7 @@ main{
   max-width: 1414px;
   margin: 0 auto;
 }
-footer{
-  max-width: 1414px;
-  margin: 0 auto;
-}
+
 /* @import "tailwindcss" */
 /* header style */
 .header{
@@ -59,7 +56,7 @@ max-width: 560px;
   border: 3px blueviolet solid;
 }
 .header-img img{
-
+ max-width: 100%;
 }
 /* section style */
 .section-one{
@@ -140,4 +137,68 @@ border-radius: 10px 10px 0 0;
   font-weight: 600;
   margin-bottom: 20px;
   margin-top: 10px;
+}
+
+
+/* footer style */
+footer{
+  background-color: #161616;
+  color: white;
+  height: 450px;
+  align-content: center;
+  justify-content:center ;
+}
+.nav h2{
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 600px;
+}
+.navs ul{
+  padding-left: 50px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+}
+.navs ul a{
+  text-decoration: none;
+  color: white;
+}
+/* responsive */
+@media screen and (max-width:576px) {
+  .header,
+  .section-one,
+  .button-show{
+    flex-direction:column;
+    max-width: 100%;
+  }
+  .button-show{
+    width: 100%;
+    padding: 5px;
+  }
+  .btnb{
+    display:block;
+    width: 100%;
+    padding:5px;
+  }
+  .parents{
+ display: grid;
+ grid-template-columns: repeat(1,1fr);
+ gap: 10px;
+}
+.container{
+  max-width:100%;
+  margin:0;
+}
+footer{
+  height: fit-content;
+  
+}
+.navs ul{
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
 }
